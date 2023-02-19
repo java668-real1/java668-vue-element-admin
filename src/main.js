@@ -4,7 +4,6 @@ import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import locale from 'element-ui/lib/locale/lang/en' // lang i18n
 
 import '@/styles/index.scss' // global css
 
@@ -14,6 +13,7 @@ import router from './router'
 
 import '@/icons' // icon
 import '@/permission' // permission control
+import i18n from './lang' // Internationalization
 
 /**
  * If you don't want to use mock-server
@@ -23,22 +23,25 @@ import '@/permission' // permission control
  * Currently MockJs will be used in the production environment,
  * please remove it before going online ! ! !
  */
-console.log(process.env.NODE_ENV )
-if (process.env.NODE_ENV === 'production') {
-  const { mockXHR } = require('../mock')
-  mockXHR()
-}
+// console.log(process.env.NODE_ENV )
+// if (process.env.NODE_ENV === 'production') {
+//   const { mockXHR } = require('../mock')
+//   mockXHR()
+// }
 
 // set ElementUI lang to EN
-Vue.use(ElementUI, { locale })
+// Vue.use(ElementUI, { locale })
 // 如果想要中文版 element-ui，按如下方式声明
-// Vue.use(ElementUI)
-
+Vue.use(ElementUI, {
+  size: 'small',  // set element-ui default size
+  i18n: (key, value) => i18n.t(key, value)
+})
 Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
   router,
   store,
+  i18n,
   render: h => h(App)
 })
