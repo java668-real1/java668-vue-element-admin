@@ -217,6 +217,7 @@ export default {
   filters: {},
   data() {
     return {
+      delete: this.$t('table.delete'),
       tableKey: 0,
       list: null,
       total: 0,

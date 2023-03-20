@@ -1,5 +1,6 @@
 <template>
   <div class="sidebar-logo-container" :class="{'collapse':collapse}">
+    <div style="background-color: hsla(0,0%,100%,.1);">
     <transition name="sidebarLogoFade">
       <router-link v-if="collapse" key="collapse" class="sidebar-logo-link" to="/">
         <img v-if="logo" :src="logo" class="sidebar-logo">
@@ -10,6 +11,7 @@
         <h1 class="sidebar-title">{{ title }} </h1>
       </router-link>
     </transition>
+    </div>
   </div>
 </template>
 
@@ -24,7 +26,7 @@ export default {
   },
   data() {
     return {
-      title: 'Vue Admin Template',
+      title: '在线录制平台',
       logo: 'https://wpimg.wallstcn.com/69a1c46c-eb1c-4b46-8bd4-e9e686ef5251.png'
     }
   }
@@ -46,7 +48,7 @@ export default {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  background: #2b2f3a;
+  background: #0665d0;
   text-align: center;
   overflow: hidden;
 
