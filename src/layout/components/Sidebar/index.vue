@@ -13,25 +13,27 @@
             </a>
           </li>
           <li class="nav-main-item"><a class="nav-main-link false"><i
-            class="nav-main-link-icon si el-icon-notebook-2"></i><span class="nav-main-link-name">使用文档</span></a>
+            class="nav-main-link-icon si el-icon-document"></i><span class="nav-main-link-name">使用文档</span></a>
           </li>
-          <li class="nav-main-heading">订阅</li>
-          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-shopping-cart-1"></i><span
-            class="nav-main-link-name">我的订阅</span></a></li>
-          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-shopping-cart-1"></i><span
-            class="nav-main-link-name">购买订阅</span></a></li>
+          <li class="nav-main-heading">录制</li>
+          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-video-camera-solid"></i><span
+            class="nav-main-link-name">主播管理</span></a></li>
+          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-shopping-bag-1"></i><span
+            class="nav-main-link-name">直播管理</span></a></li>
+          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-files"></i><span
+            class="nav-main-link-name">文件管理</span></a></li>
           <li class="nav-main-heading">财务</li>
-          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-shopping-cart-1"></i><span
+          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-s-goods"></i><span
             class="nav-main-link-name">我的订单</span></a></li>
-          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-shopping-cart-1"></i><span
+          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-circle-plus"></i><span
             class="nav-main-link-name">我的邀请</span></a></li>
           <li class="nav-main-heading">用户</li>
-          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-shopping-cart-1"></i><span
+          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-user-solid"></i><span
             class="nav-main-link-name">个人中心</span></a></li>
-          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-shopping-cart-1"></i><span
+          <li class="nav-main-item"><a class="nav-main-link false"><i class="nav-main-link-icon si el-icon-s-promotion"></i><span
             class="nav-main-link-name">我的工单</span></a></li>
           <li class="nav-main-item"><a class="nav-main-link false"><i
-            class="nav-main-link-icon si el-icon-shopping-cart-1"></i><span
+            class="nav-main-link-icon si el-icon-s-claim"></i><span
             class="nav-main-link-name">流量明细</span></a></li>
         </ul>
       </div>
@@ -80,7 +82,7 @@
   .content-side {
     width: 100%;
     margin: 0 auto;
-    padding: 1.125rem 1.125rem 1px;
+    padding: 18px 18px 1px;
     overflow-x: hidden;
   }
 
@@ -111,10 +113,10 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0.5rem 0.625rem;
+    padding: 8px 10px;
     margin: 2px 0;
     min-height: 2.25rem;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1.25rem;
     letter-spacing: .0125em;
@@ -150,10 +152,10 @@
     -moz-osx-font-smoothing: grayscale;
   }
   .nav-main-heading {
-    padding-top: 1.75rem;
-    padding-bottom: 0.25rem;
-    padding-left: 0.625rem;
-    font-size: 1.5rem;
+    padding-top: 28px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .075rem;
